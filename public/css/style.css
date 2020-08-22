@@ -1,0 +1,603 @@
+.div_longitud{
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+}
+.head_{
+    width: 100%;
+    height: 30px;
+    color: rgb(44, 44, 44);
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+.head_ h2{
+    font-weight: unset;
+
+}
+.body_long{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+}
+.table{
+    width: 59%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    overflow-x: auto;
+    padding-right: 3px;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+#select_uno{
+    width: 90%;
+    background-color: #fff;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+#num{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    border-radius: 3px;
+}
+#select_dos{
+    width: 90%;
+    background-color: #fff;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+.select_uno{
+    width: 80%;
+    margin-top: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.numero{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.select_dos{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.resultado{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#btn{
+    width: 80%;
+    height: 40px;
+    outline-style: none;
+    border: 0;
+    background-color: rgb(0, 148, 20);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.resultado_long{
+    width: 80%;
+    height: 150px;
+    border: 1px solid rgb(31, 31, 31);
+    border-radius: 10px;
+    font-family: sans-serif;
+    margin-top: 30px;
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+    overflow-x:auto;
+}
+.resultado_long p{
+    width: 100%;
+    display: flex;
+}
+
+/* div peso conversion*/
+.div_peso{
+    width: 100%;
+    height: 100%;
+}
+.head_peso{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(0, 148, 20);
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+#select_unoP{
+    width: 90%;
+    background-color: #fff;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+#numP{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    border-radius: 3px;
+}
+#select_dosP{
+    width: 90%;
+    background-color: #fff;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+#btnP{
+    width: 80%;
+    height: 40px;
+    outline-style: none;
+    border: 0;
+    background-color: rgb(0, 148, 20);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* div tiempo conversion */
+.div_tiempo{
+    width: 100%;
+    height: 100%;
+}
+.head_tiempo{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(0, 148, 20);
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+#select_unoT{
+    width: 90%;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+#numT{
+    width: 90%;
+    height: 30px;
+    border-radius: 3px;
+}
+#select_dosT{
+    width: 90%;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+#btnT{
+    width: 80%;
+    height: 40px;
+    outline-style: none;
+    border: 0;
+    background-color: rgb(0, 148, 20);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* div calcular distancia */
+.div_distancia{
+    width: 100%;
+    height: 100%;
+}
+
+.box_distancia{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+}
+.input_uno{
+    width: 80%;
+    height: 30px;
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 30px;
+}
+#dis_velocidad{
+    width: 70%;
+}
+#dis_select_uno{
+    width: 30%;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+.input_dos{
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+#dis_tiempo{
+    width: 70%;
+}
+#dis_select_dos{
+    width:  30%;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+.resultado_cal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    font-family: sans-serif;
+}
+#calcular_distancia{
+    width: 80%;
+    height: 40px;
+    outline-style: none;
+    border: 0;
+    background-color: rgb(0, 148, 20);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.div_resultado_cal{
+    width: 80%;
+    height: 150px;
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 10px;
+    font-family: sans-serif;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    color: rgb(29, 29, 29);
+}
+.div_resultado_cal p{
+    font-size: 20px;
+}
+
+/* div calcular velocidad */
+.div_velocidad{
+    width: 100%;
+    height: 100%;
+}
+
+#vel_distancia{
+    width: 70%;
+}
+#vel_select_uno{
+    width: 30%;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+#vel_select_dos{
+    width: 30%;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+#vel_tiempo{
+    width: 70%;
+}
+#calcular_velocidad{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    background-color: rgb(0, 148, 20);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+}
+
+/* div calcular tiempo */
+.div_tiempo_c{
+    width: 100%;
+    height: 100%;
+}
+#tiem_distancia{
+    width: 70%;
+}
+#tiem_select_uno{
+    width: 30%;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+#tiem_select_dos{
+    width: 30%;
+    height: 30px;
+    outline-style: none;
+    color: rgb(0, 116, 124);
+}
+#tiem_velocidad{
+    width: 70%;
+}
+#calcular_tiempo{
+    width: 80%;
+    height: 40px;
+    outline-style: none;
+    border: 0;
+    background-color: rgb(0, 148, 20);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+/* table desing */
+table{
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+thead{
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 148, 20);
+}
+thead th{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    color: #fff;
+    font-family: sans-serif;
+
+}
+td{
+    padding: 10px;
+    font-family: sans-serif;
+}
+tbody tr th{
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 3px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+tbody tr{
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(211, 211, 211); 
+}
+
+
+
+@media only screen and (max-width: 414px){
+    .table{
+        display: none;
+    }
+   
+
+    .body_long{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        float: left;
+    }
+    .head_{
+        width: 100%;
+        height: 30px;
+        background-color: rgb(0, 148, 20);
+        color: #fff;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    #select_uno{
+        width: 100%;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+        
+    }
+    #num{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border: 0;
+        height: 30px;
+        outline-style: none;
+    }
+    #select_dos{
+        width: 100%;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+
+    /* masa */
+    .head_peso{
+        width: 100%;
+        height: 30px;
+        background-color: rgb(0, 148, 20);
+        color: #fff;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    #select_unoP{
+        width: 100%;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+    #numP{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border: 0;
+        height: 30px;
+        outline-style: none;
+    }
+    #select_dosP{
+        width: 100%;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+
+    /* tiempo */
+    .head_tiempo{
+        width: 100%;
+        height: 30px;
+        background-color: rgb(0, 148, 20);
+        color: #fff;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    #select_unoT{
+        width: 100%;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+    #numT{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border: 0;
+        height: 30px;
+        outline-style: none;
+    }
+    #select_dosT{
+        width: 100%;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+
+    /* distancia */
+    .box_distancia{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        float: left;
+    }
+   
+    #dis_select_uno{
+        width: 70px;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+   
+    #dis_select_dos{
+        width: 70px;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+
+    /* velocidad */
+    #vel_select_uno{
+        width: 100px;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+    #vel_select_dos{
+        width: 100px;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+
+    /* calcular tiempo */
+    #tiem_select_uno{
+        width: 120px;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+    #tiem_select_dos{
+        width: 100px;
+        background-color: #fff;
+        border: 0;
+        height: 30px;
+        outline-style: none;
+        color: rgb(0, 116, 124);
+    }
+}
