@@ -20,14 +20,8 @@
     <div class="contenedor">
         
         <div class="panel">
-            <div class="div_menu">
-                <h4>Menu</h4>
-            </div>
             <div class="the_menus">
                 <div class="calcular">
-                    <div class="head_cal">
-                        <h3>Calcular</h3>
-                    </div>
                     <div class="body_cal">
                         <a id="c_distancia" href="">Distancia</a>
                     </div>
@@ -39,9 +33,6 @@
                     </div>
                 </div>
                 <div class="conversion">
-                    <div class="head_con">
-                        <h3>Conversion</h3>
-                    </div>
                     <div class="body_con">
                         <a id="longitud" href="">Longitud</a>
                     </div>
@@ -51,19 +42,17 @@
                     <div class="body_con">
                         <a id="peso" href="">Peso</a>
                     </div>
-                    <!-- <div class="body_con">
-                        <a id="escala" href="">Escala</a>
-                    </div> -->
                 </div>
             </div>
         </div>
+
         <div class="box_line" >
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <div class="box_body">
 
+        <div class="box_body">
             <div style="display: block" class="bienvenida">
                 <div class="s_p">
                     <div class="div_strong">
@@ -78,38 +67,42 @@
             <!-- div de conversion de longitud -->
             <div style="display: none" class="div_longitud">
                 <div class="head_">
-                    <h2>Conversion de Unidades de Longitud</h2>
+                    <h2>Conversion de Longitud</h2>
                 </div>
                 <div class="body_long">
-                    <div class="select_uno">
-                        <select id="select_uno">
-                            <option value="kilometro">Kilometro</option>
-                            <option value="pulgada">Pulgada</option>
-                            <option value="metro">Metro</option>
-                            <option value="pie">Pie</option>
-                            <option value="milimetro">Milimetro</option>
-                            <option value="centimetro">Centimetro</option>
-                            <option value="millas">Millas</option>
-                            <option value="yarda">Yarda</option>
-                        </select>
-                    </div>
-                    <div class="numero">
-                        <input type="number" name="" id="num">
-                    </div>
-                    <div class="select_dos">
-                        <select id="select_dos">
-                            <option value="kilometro">Kilometro</option>
-                            <option value="pulgada">Pulgada</option>
-                            <option value="metro">Metro</option>
-                            <option value="pie">Pie</option>
-                            <option value="milimetro">Milimetro</option>
-                            <option value="centimetro">Centimetro</option>
-                            <option value="millas">Millas</option>
-                            <option value="yarda">Yarda</option>
-                        </select>
+                    <div class="box_s">
+                        <div class="select_uno">
+                            <select class="select_one" id="select_uno">
+                                <option value="kilometro">Kilometro</option>
+                                <option value="pulgada">Pulgada</option>
+                                <option value="metro">Metro</option>
+                                <option value="pie">Pie</option>
+                                <option value="milimetro">Milimetro</option>
+                                <option value="centimetro">Centimetro</option>
+                                <option value="millas">Millas</option>
+                                <option value="yarda">Yarda</option>
+                            </select>
+                        </div>
+                        <div class="numero">
+                            <input type="number" placeholder="Introdusca el valor" class="number" id="num">
+                        </div>
+                        <div class="select_dos">
+                            <select class="select_two" id="select_dos">
+                                <option value="kilometro">Kilometro</option>
+                                <option value="pulgada">Pulgada</option>
+                                <option value="metro">Metro</option>
+                                <option value="pie">Pie</option>
+                                <option value="milimetro">Milimetro</option>
+                                <option value="centimetro">Centimetro</option>
+                                <option value="millas">Millas</option>
+                                <option value="yarda">Yarda</option>
+                            </select>
+                        </div>
+                        <div class="btn_jsh" >
+                            <button class="btn" id="btn" type="button">Convertir</button>
+                        </div>
                     </div>
                     <div class="resultado">
-                        <button id="btn" type="button">Convertir</button>
                         <div class="resultado_long">
                             <p class="p" id="valor"></p>
                             <p class="p" id="resultado"></p>
@@ -117,87 +110,53 @@
                     </div>
                    
                 </div>
-
-                <div class="table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th> <th>km</th> <th>in</th> <th>m</th> <th>ft</th> <th>mm</th> <th>cm</th> <th>mi</th> <th>yarda</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th >Kilometro = km</th> <td>1</td> <td>39,370.07</td> <td>1000</td> <td>3,280.83‬</td> <td>1,000,000</td> <td>100,000</td>
-                                <td>0.62137</td><td>1093.613298</td>
-                            </tr>
-                            <tr>
-                                <th>Pulgada = in</th> <td>0.0000255</td> <td>1</td> <td>0.0255</td> <td>0.0834</td> <td>0.039370</td> <td>2.54</td><td>0.0000158</td>
-                                <td>0.027778</td>
-                            </tr>
-                            <tr>
-                                <th>Metro = m</th><td>0.001</td><td>39.37007</td><td>1</td><td>3.28083</td><td>1000</td><td>100</td><td>0.0006214</td><td>1.093614</td>
-                            </tr>
-                            <tr>
-                                <th>Pie = ft</th><td>0.000306</td><td>12</td><td>0.3049</td><td>1</td><td>0.003281</td><td>30.480091</td><td>5279.985709</td><td>0.333333</td>
-                            </tr>
-                            <tr>
-                                <th>Milimetro = mm</th><td>0.000001</td><td>25.400046</td><td>0.001</td><td>304.800919</td><td>1</td><td>0.1</td><td>6.2137e-7</td><td>914.400000</td>
-                            </tr>
-                            <tr>
-                                <th>Centimetro = cm</th><td>0.00001</td><td>0.39371</td><td>0.01</td><td>0.032808</td><td>10</td><td>1</td><td>160,934.449789</td><td>91.440000</td>
-                            </tr>
-                            <tr>
-                                <th>Millas = mi</th><td>1.609347</td><td>63,360.107504</td><td>1609.344497</td><td>0.000189</td><td>1,609,344.497</td><td></td><td>1</td><td>0.000568</td>
-                            </tr>
-                            <tr>
-                                <th>yd</th><td>0.000914</td><td>36</td><td>0.914400</td><td>3</td><td>0.001093</td><td>0.010936</td><td>1760.003376</td><td>1</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
             </div>
 
             <!-- div de conversion de peso -->
             <div style="display: none" class="div_peso">
                 <div class="head_">
-                    <h2>Conversion de Unidades de Masa</h2>
+                    <h2>Conversion de Masa</h2>
                 </div>
                 <div class="body_long">
-                    <div class="select_uno">
-                        <select id="select_unoP">
-                            <option value="tonelada">Tonelada</option>
-                            <option value="kilogramo">Kilogramo</option>
-                            <option value="kilo">Kilo</option>
-                            <option value="gramos">Gramos</option>
-                            <option value="libra">Libra</option>
-                            <option value="centigramo">Centigramos</option>
-                            <option value="onza">Onza</option>
-                            <option value="miligramo">Miligramo</option>
-                            <!-- <option value="microgramo">Microgramo</option>
-                            <option value="nanogramo">Nanogramo</option>
-                            <option value="picogramo">Picogramo</option> -->
-                        </select>
-                    </div>
-                    <div class="numero">
-                        <input type="number" name="" id="numP">
-                    </div>
-                    <div class="select_dos">
-                        <select id="select_dosP">
-                            <option value="tonelada">Tonelada</option>
-                            <option value="kilogramo">Kilogramo</option>
-                            <option value="kilo">Kilo</option>
-                            <option value="gramos">Gramos</option>
-                            <option value="libra">Libra</option>
-                            <option value="centigramo">Centigramos</option>
-                            <option value="onza">Onza</option>
-                            <option value="miligramo">Miligramo</option>
-                            <!-- <option value="microgramo">Microgramo</option>
-                            <option value="nanogramo">Nanogramo</option>
-                            <option value="picogramo">Picogramo</option> -->
-                        </select>
+                    <div class="box_s">
+                        <div class="select_uno">
+                            <select class="select_one" id="select_unoP">
+                                <option value="tonelada">Tonelada</option>
+                                <option value="kilogramo">Kilogramo</option>
+                                <option value="kilo">Kilo</option>
+                                <option value="gramos">Gramos</option>
+                                <option value="libra">Libra</option>
+                                <option value="centigramo">Centigramos</option>
+                                <option value="onza">Onza</option>
+                                <option value="miligramo">Miligramo</option>
+                                <!-- <option value="microgramo">Microgramo</option>
+                                <option value="nanogramo">Nanogramo</option>
+                                <option value="picogramo">Picogramo</option> -->
+                            </select>
+                        </div>
+                        <div class="numero">
+                            <input type="number" placeholder="Introdusca el valor" class="number" id="numP">
+                        </div>
+                        <div class="select_dos">
+                            <select class="select_two" id="select_dosP">
+                                <option value="tonelada">Tonelada</option>
+                                <option value="kilogramo">Kilogramo</option>
+                                <option value="kilo">Kilo</option>
+                                <option value="gramos">Gramos</option>
+                                <option value="libra">Libra</option>
+                                <option value="centigramo">Centigramos</option>
+                                <option value="onza">Onza</option>
+                                <option value="miligramo">Miligramo</option>
+                                <!-- <option value="microgramo">Microgramo</option>
+                                <option value="nanogramo">Nanogramo</option>
+                                <option value="picogramo">Picogramo</option> -->
+                            </select>
+                        </div>
+                        <div class="btn_jsh">
+                            <button class="btn" id="btnP" type="button">Convertir</button>
+                        </div>
                     </div>
                     <div class="resultado">
-                        <button id="btnP" type="button">Convertir</button>
                         <div class="resultado_long">
                             <p class="p" id="valorP"></p>
                             <p class="p" id="resultadoP"></p>
@@ -205,118 +164,53 @@
                     </div>
         
                 </div>
-                <div class="table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th> <th>ton</th> <th>kg</th> <th>k</th> <th>g</th> <th>lb</th> <th>cg</th> <th>oz</th> <th>mg</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th >Tonelada = ton</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-                                <td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Kilogramo = kg</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td><td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>Kilo = k</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Gramos = g</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Libra = lb</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Centigramos = cg</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Onza = oz</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Miligramo</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
                 
             </div>
 
             <!-- div de conversion de tiempo -->
             <div style="display: none" class="div_tiempo">
                 <div class="head_">
-                    <h2>Conversion de Unidades de Tiempo</h2>
+                    <h2>Conversion de Tiempo</h2>
                 </div>
                 <div class="body_long">
-                    <div class="select_uno">
-                        <select id="select_unoT">
-                            <option value="año">Año</option>
-                            <option value="mes">Mes</option>
-                            <option value="semana">Semana</option>
-                            <option value="dia">Dia</option>
-                            <option value="hora">Hora</option>
-                            <option value="minuto">Minuto</option>
-                            <option value="segundo">Segundo</option>
-                            <option value="milisegundo">Milisegundo</option>
-                        </select>
-                    </div>
-                    <div class="numero">
-                        <input type="number" name="" id="numT">
-                    </div>
-                    <div class="select_dos">
-                        <select id="select_dosT">
-                            <option value="año">Año</option>
-                            <option value="mes">Mes</option>
-                            <option value="semana">Semana</option>
-                            <option value="dia">Dia</option>
-                            <option value="hora">Hora</option>
-                            <option value="minuto">Minuto</option>
-                            <option value="segundo">Segundo</option>
-                            <option value="milisegundo">Milisegundo</option>
-                        </select>
+                    <div class="box_s">
+                        <div class="select_uno">
+                            <select class="select_one" id="select_unoT">
+                                <option value="año">Año</option>
+                                <option value="mes">Mes</option>
+                                <option value="semana">Semana</option>
+                                <option value="dia">Dia</option>
+                                <option value="hora">Hora</option>
+                                <option value="minuto">Minuto</option>
+                                <option value="segundo">Segundo</option>
+                                <option value="milisegundo">Milisegundo</option>
+                            </select>
+                        </div>
+                        <div class="numero">
+                            <input type="number" placeholder="Introdusca el valor" class="number" id="numT">
+                        </div>
+                        <div class="select_dos">
+                            <select class="select_two" id="select_dosT">
+                                <option value="año">Año</option>
+                                <option value="mes">Mes</option>
+                                <option value="semana">Semana</option>
+                                <option value="dia">Dia</option>
+                                <option value="hora">Hora</option>
+                                <option value="minuto">Minuto</option>
+                                <option value="segundo">Segundo</option>
+                                <option value="milisegundo">Milisegundo</option>
+                            </select>
+                        </div>
+                        <div class="btn_jsh">
+                            <button class="btn" id="btnT" type="button">Convertir</button>
+                        </div>
                     </div>
                     <div class="resultado">
-                        <button id="btnT" type="button">Convertir</button>
                         <div class="resultado_long">
                             <p class="p" id="valorT"></p>
                             <p class="p" id="resultadoT"></p>
                         </div>
                     </div>
-                </div>
-                <div class="table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th> <th>año</th> <th>dia</th> <th>h</th> <th>min</th> <th>s</th> <th>ms</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th >Año </th> <td>1</td> <td>365</td> <td>8,760‬</td> <td>‬525,600‬</td> <td>31,536,000‬</td> <td>31,536,000,000‬</td>
-                                
-                            </tr>
-                            <tr>
-                                <th>Dia </th> <td></td> <td>1</td> <td>24</td> <td></td> <td></td> <td></td>
-                                
-                            </tr>
-                            <tr>
-                                <th>Hora = h</th><td></td><td>24</td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Minuto = min</th><td></td><td>1,440</td><td>60</td><td>1</td><td>60</td><td>60,000</td>
-                            </tr>
-                            <tr>
-                                <th>Segundo = s</th><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Milisegundo = ms</th><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            
-                        </tbody>
-                    </table>
                 </div>
                 
             </div>
@@ -326,70 +220,35 @@
                 <div class="head_">
                     <h2>Calcular distancia</h2>
                 </div>
-                <div class="box_distancia">
-                    <div class="input_uno">
-                        <input type="number" placeholder="Colocar velocidad" id="dis_velocidad">
-                    
-                        <select id="dis_select_uno">
-                            <option value="km/h">km/h</option>
-                            <option value="m/s">m/s</option>
-                            <option value="mi/h">mi/h</option>
-                        </select>
-                    
+                <div class="body_long">
+                    <div class="box_s">
+                        <div class="input_">
+                            <input type="number" class="input_cal" placeholder="Colocar velocidad" id="dis_velocidad">
+                        
+                            <select id="dis_select_uno">
+                                <option value="km/h">km/h</option>
+                                <option value="m/s">m/s</option>
+                                <option value="mi/h">mi/h</option>
+                            </select>
+                        
+                        </div>
+                        <div class="input_">
+                            <input type="number" class="input_cal" placeholder="Colocar tiempo" id="dis_tiempo">
+                        
+                            <select id="dis_select_dos">
+                                <option value="h">h</option>
+                                <option value="min">min</option>
+                                <option value="s">s</option>
+                            </select>
+                        
+                        </div>
+                        <button class="btn" id="calcular_distancia">Calcular distancia</button>
                     </div>
-                    <div class="input_dos">
-                        <input type="number" placeholder="Colocar tiempo" id="dis_tiempo">
-                    
-                        <select id="dis_select_dos">
-                            <option value="h">h</option>
-                            <option value="min">min</option>
-                            <option value="s">s</option>
-                        </select>
-                    
-                    </div>
-                    <div class="resultado_cal">
-                        <button id="calcular_distancia">Calcular distancia</button>
-                        <div class="div_resultado_cal">
+                    <div class="resultado">
+                        <div class="resultado_long">
                             <p id="res"></p>
                         </div>
                     </div>
-                </div>
-                <div class="table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th> <th>km/h</th> <th>km/min</th> <th>km/s</th> <th>m/h</th> <th>m/min</th> <th>m/s</th> <th>mi/h</th> <th>mi/min</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th >Kilometro = km</th> <td></td> <td></td> <td></td> <td>‬</td> <td></td> <td></td>
-                                <td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Pulgada = in</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td><td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>Metro = m</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Pie = ft</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Milimetro = mm</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Centimetro = cm</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Millas = mi</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>yarda</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
                 
             </div>
@@ -399,66 +258,31 @@
                 <div class="head_">
                     <h2>Calcular velocidad</h2>
                 </div>
-                <div class="box_distancia">
-                    <div class="input_uno">
-                        <input type="number" placeholder="Colocar distancia" id="vel_distancia">
-                        <select id="vel_select_uno">
-                            <option value="km">km</option>
-                            <option value="m">m</option>
-                            <option value="mi">mi</option>
-                        </select>
+                <div class="body_long">
+                    <div class="box_s">
+                        <div class="input_">
+                            <input type="number" class="input_cal" placeholder="Colocar distancia" id="vel_distancia">
+                            <select id="vel_select_uno">
+                                <option value="km">km</option>
+                                <option value="m">m</option>
+                                <option value="mi">mi</option>
+                            </select>
+                        </div>
+                        <div class="input_">
+                            <input type="number" class="input_cal" placeholder="Colocar tiempo" id="vel_tiempo">
+                            <select id="vel_select_dos">
+                                <option value="h">h</option>
+                                <option value="min">min</option>
+                                <option value="s">s</option>
+                            </select>
+                        </div>
+                        <button class="btn" id="calcular_velocidad">Calcular velocidad</button>
                     </div>
-                    <div class="input_dos">
-                        <input type="number" placeholder="Colocar tiempo" id="vel_tiempo">
-                        <select id="vel_select_dos">
-                            <option value="h">h</option>
-                            <option value="min">min</option>
-                            <option value="s">s</option>
-                        </select>
-                    </div>
-                    <div class="resultado_cal">
-                        <button id="calcular_velocidad">Calcular velocidad</button>
-                        <div class="div_resultado_cal">
+                    <div class="resultado">
+                        <div class="resultado_long">
                             <p id="resv"></p>
                         </div>
                     </div>
-                </div>
-                <div class="table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th> <th>km</th> <th>m</th> <th></th> <th>ft</th> <th>mm</th> <th>cm</th> <th>mi</th> <th>yarda</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th >Kilometro = km</th> <td></td> <td></td> <td></td> <td>‬</td> <td></td> <td></td>
-                                <td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Pulgada = in</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td><td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>Metro = m</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Pie = ft</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Milimetro = mm</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Centimetro = cm</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Millas = mi</th><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td>
-                            </tr>
-                            <tr>
-                                <th>yarda</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
 
@@ -468,71 +292,35 @@
                 <div class="head_">
                     <h2>Calcular tiempo</h2>
                 </div>
-                <div class="box_distancia">
-                    <div class="input_uno">
-                        <input type="number" placeholder="Colocar distancia" id="tiem_distancia">
-                        <select id="tiem_select_uno">
-                            <option value="km">km</option>
-                            <option value="m">m</option>
-                            <option value="mi">mi</option>
-                        </select>
+                <div class="body_long">
+                    <div class="box_s">
+                        <div class="input_">
+                            <input type="number" class="input_cal" placeholder="Colocar distancia" id="tiem_distancia">
+                            <select id="tiem_select_uno">
+                                <option value="km">km</option>
+                                <option value="m">m</option>
+                                <option value="mi">mi</option>
+                            </select>
+                        </div>
+                        <div class="input_">
+                            <input type="number" class="input_cal" placeholder="Colocar velocidad" id="tiem_velocidad">
+                            <select id="tiem_select_dos">
+                                <option value="km/h">km/h</option>
+                                <option value="m/s">m/s</option>
+                                <option value="mi/h">mi/h</option>
+                            </select>
+                        </div>
+                        <button class="btn" id="calcular_tiempo">Calcular tiempo</button>
                     </div>
-                    <div class="input_dos">
-                        <input type="number" placeholder="Colocar velocidad" id="tiem_velocidad">
-                        <select id="tiem_select_dos">
-                            <option value="km/h">km/h</option>
-                            <option value="m/s">m/s</option>
-                            <option value="mi/h">mi/h</option>
-                        </select>
-                    </div>
-                    <div class="resultado_cal">
-                        <button id="calcular_tiempo">Calcular tiempo</button>
-                        <div class="div_resultado_cal">
+                    <div class="resultado">
+                        <div class="resultado_long">
                             <p id="rest"></p>
                         </div>
                     </div>
                 </div>
-                <div class="table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th> <th>km</th> <th>in</th> <th>m</th> <th>ft</th> <th>mm</th> <th>cm</th> <th>mi</th> <th>yarda</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th >Kilometro = km</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-                                <td>0.62137</td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Pulgada = in</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td><td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>Metro = m</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Pie = ft</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Milimetro = mm</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Centimetro = cm</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>Millas = mi</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <th>yarda</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
             </div>
-
         </div>
+        
         <div class="footer">
 
         </div>
@@ -540,8 +328,8 @@
 
     <script src="./js/software.js"></script>
     <script src="./js/app2.js"></script>
-    <script src="./js/longitud.js"></script>
     <script src="./js/con_tiempo.js"></script>
+    <script src="./js/longitud.js"></script>
     <script src="./js/masa.js"></script>
 </body>
 </html>

@@ -5,27 +5,20 @@ const num = document.getElementById('num');
 const resultado = document.getElementById('resultado');
 const valor = document.getElementById('valor');
 
-let contador_mul = (a, b) => a * b;
-let contador_div = (a, b) => a / b;
 
 btn.addEventListener('click', (e) =>{
     var numero = num.value;
     
     if(uno.value == 'kilometro' && dos.value == 'kilometro'){
-        valor.innerHTML = numero +' km';
-        resultado.innerHTML = contador_mul(numero, 1) +' km';
+        new Conversion_mul(numero, 1, 'km', 'km')
     }else if(uno.value == 'kilometro' && dos.value == 'millas'){
-        valor.innerHTML = numero +' km';
-        resultado.innerHTML = contador_mul(numero, 0.62137) +' mi';
+        new Conversion_mul(numero, 0.62137, 'km', 'mi')
     }else if(uno.value == 'kilometro' && dos.value == 'milimetro'){
-        valor.innerHTML = numero +' km';
-        resultado.innerHTML = contador_mul(numero, 1000000) +' m';
+        new Conversion_mul(numero, 1000000, 'km', 'mil')
     }else if(uno.value == 'kilometro' && dos.value == 'metro'){
-        valor.innerHTML = numero +' km';
-        resultado.innerHTML = contador_mul(numero, 1000) +' m';
+        new Conversion_mul(numero, 1000, 'km', 'm')
     }else if(uno.value == 'kilometro' && dos.value == 'centimetro'){
-       valor.innerHTML = numero +' km';
-       resultado.innerHTML = contador_mul(numero, 100000) +' cm';
+       new Conversion_mul(numero, 100000, 'km', 'cm')
     }else if(uno.value == 'kilometro' && dos.value == 'pulgada'){
         valor.innerHTML = numero +' km';
         resultado.innerHTML = contador_mul(numero, 39370.07) +' in';

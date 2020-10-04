@@ -55,7 +55,7 @@ ul li a:hover{
 
 .contenedor{
     width: 95%;
-    height: 680px;
+    
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
@@ -94,26 +94,17 @@ ul li a:hover{
     text-align: center;
 }
 
-.div_menu{
-    width: 100%;
-    height: 30px;
-    background-color: rgb(0, 148, 20);
-    color: #fff;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    box-sizing: border-box;
-    align-self: flex-start;
-}
+
 .panel{
-    width: 20%;
-    height: 90%;
-    background-color: rgba(32, 32, 32, 0.925);
+    width: 100%;
+    height:50px;
+    border-bottom: 1px solid #ddd;
 }
 .the_menus{
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 h3{
     margin: 0;
@@ -124,78 +115,47 @@ h3{
     margin-left: 3%;
 }
 .calcular{
-    width: 100%;
-    margin-bottom: 15px;
+    display: flex;
+    
 }
 .conversion{
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
 }
-.head_cal{
-    width: 100%;
-    font-family: sans-serif;
-    font-size: 20px;
-    color: #fff;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(20, 20, 20, 0.856);
-    height: 50px;
-    align-items: center;
-}
-.body_cal{
-    width: 100%;
-}
+
 .body_cal a {
-    width: 100%;
+    width: 120px;
     font-family: sans-serif;
     font-size: 20px;
-    color: #fff;
+    color: rgb(34, 34, 34);
     height: 50px;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgba(104, 104, 104, 0.877);
 }
 .body_cal a:hover{
-    background-color: rgba(104, 104, 104, 0.877);
+    background-color: rgba(70, 70, 70, 0.877);
+    color: white;
 }
-.head_con{
-    width: 100%;
-    font-family: sans-serif;
-    font-size: 20px;
-    color: #fff;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(20, 20, 20, 0.856);
-    height: 50px;
-    align-items: center;
-}
-.body_con{
-    width: 100%;
-}
+
 .body_con a{
-    width: 100%;
+    width: 120px;
     font-family: sans-serif;
     font-size: 20px;
-    color: #fff;
+    color: rgb(34, 34, 34);
     height: 50px;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgba(104, 104, 104, 0.877);
 }
 .body_con a:hover{
-    background-color: rgba(104, 104, 104, 0.877);
+    background-color: rgba(70, 70, 70, 0.877);
+    color: white;
 }
 
 
-@media only screen and (max-width: 748px){
+@media only screen and (max-width: 500px){
     .head_cal{
         width: 100%;
         font-family: sans-serif;

@@ -1,8 +1,22 @@
 .div_longitud{
     width: 100%;
     height: 100%;
-    /* display: flex; */
+    margin-top: 30px;
 }
+.div_peso{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+.div_tiempo{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+
+
+
 .head_{
     width: 100%;
     height: 30px;
@@ -10,97 +24,101 @@
     font-family: sans-serif;
     display: flex;
     align-items: center;
-    padding-left: 15px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #ddd;
+    justify-content: center;
 }
 .head_ h2{
     font-weight: unset;
-
 }
 .body_long{
-    width: 40%;
-    height: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     float: left;
+    margin-top: 30px;
 }
-.table{
-    width: 59%;
-    height: 95%;
+
+.box_s{
+    width: 300px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    float: left;
-    overflow-x: auto;
-    padding-right: 3px;
-    box-sizing: border-box;
-    padding-left: 5px;
+    border: 1px solid #ddd;
+    padding-top: 10px;
+
 }
-#select_uno{
+.select_one{
     width: 90%;
     background-color: #fff;
     height: 30px;
     outline-style: none;
     color: rgb(0, 116, 124);
 }
-#num{
-    width: 90%;
+.number{
+    width: 88%;
     background-color: rgb(255, 255, 255);
-    height: 30px;
-    border-radius: 3px;
+    height: 25px;
+    outline: none;
+    border: 0.7px solid rgb(131, 131, 131);
 }
-#select_dos{
+.select_two{
     width: 90%;
     background-color: #fff;
     height: 30px;
     outline-style: none;
     color: rgb(0, 116, 124);
 }
+
+
+
 .select_uno{
-    width: 80%;
-    margin-top: 40px;
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
 }
 .numero{
-    width: 80%;
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
 }
 .select_dos{
-    width: 80%;
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
 }
 .resultado{
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-#btn{
-    width: 80%;
-    height: 40px;
-    outline-style: none;
+
+.btn_jsh{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 100%;
+    height: 35px;
+    outline: none;
     border: 0;
-    background-color: rgb(0, 148, 20);
-    color: #fff;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
-    border-radius: 10px;
+    background-color: #ddd;
+}
+.btn :hover{
+    background-color: rgb(107, 105, 105);
 }
 .resultado_long{
     width: 80%;
-    height: 150px;
-    border: 1px solid rgb(31, 31, 31);
-    border-radius: 10px;
+    height: 100%;
+    border: 1px solid #ddd;
     font-family: sans-serif;
-    margin-top: 30px;
     color: rgb(41, 41, 41);
     font-size: 20px;
     display: flex;
@@ -120,100 +138,19 @@
     width: 100%;
     height: 100%;
 }
-.head_peso{
-    width: 100%;
-    height: 30px;
-    background-color: rgb(0, 148, 20);
-    color: #fff;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    box-sizing: border-box;
-}
-#select_unoP{
-    width: 90%;
-    background-color: #fff;
-    height: 30px;
-    outline-style: none;
-    color: rgb(0, 116, 124);
-}
-#numP{
-    width: 90%;
-    background-color: rgb(255, 255, 255);
-    height: 30px;
-    border-radius: 3px;
-}
-#select_dosP{
-    width: 90%;
-    background-color: #fff;
-    height: 30px;
-    outline-style: none;
-    color: rgb(0, 116, 124);
-}
-#btnP{
-    width: 80%;
-    height: 40px;
-    outline-style: none;
-    border: 0;
-    background-color: rgb(0, 148, 20);
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-}
+
 
 /* div tiempo conversion */
 .div_tiempo{
     width: 100%;
     height: 100%;
 }
-.head_tiempo{
-    width: 100%;
-    height: 30px;
-    background-color: rgb(0, 148, 20);
-    color: #fff;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    box-sizing: border-box;
-}
-#select_unoT{
-    width: 90%;
-    height: 30px;
-    outline-style: none;
-    color: rgb(0, 116, 124);
-}
-#numT{
-    width: 90%;
-    height: 30px;
-    border-radius: 3px;
-}
-#select_dosT{
-    width: 90%;
-    height: 30px;
-    outline-style: none;
-    color: rgb(0, 116, 124);
-}
-#btnT{
-    width: 80%;
-    height: 40px;
-    outline-style: none;
-    border: 0;
-    background-color: rgb(0, 148, 20);
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-}
 
 /* div calcular distancia */
 .div_distancia{
     width: 100%;
     height: 100%;
+    margin-top: 30px;
 }
 
 .box_distancia{
@@ -224,15 +161,17 @@
     justify-content: center;
     float: left;
 }
-.input_uno{
+.input_{
     width: 80%;
     height: 30px;
     display: flex;
-    /* justify-content: center; */
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-#dis_velocidad{
+.input_cal{
+    border: 0.1px solid rgb(80, 80, 80);
     width: 70%;
+    outline: none;
 }
 #dis_select_uno{
     width: 30%;
@@ -244,7 +183,7 @@
     width: 80%;
     height: 30px;
     display: flex;
-    justify-content: center;
+    margin-top: 10px;
     
 }
 #dis_tiempo{
@@ -264,18 +203,7 @@
     color: #fff;
     font-family: sans-serif;
 }
-#calcular_distancia{
-    width: 80%;
-    height: 40px;
-    outline-style: none;
-    border: 0;
-    background-color: rgb(0, 148, 20);
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-}
+
 .div_resultado_cal{
     width: 80%;
     height: 150px;
@@ -298,10 +226,12 @@
 .div_velocidad{
     width: 100%;
     height: 100%;
+    margin-top: 30px;
 }
 
 #vel_distancia{
     width: 70%;
+    
 }
 #vel_select_uno{
     width: 30%;
@@ -318,23 +248,13 @@
 #vel_tiempo{
     width: 70%;
 }
-#calcular_velocidad{
-    width: 80%;
-    height: 40px;
-    outline: none;
-    background-color: rgb(0, 148, 20);
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 0;
-}
+
 
 /* div calcular tiempo */
 .div_tiempo_c{
     width: 100%;
     height: 100%;
+    margin-top: 30px;
 }
 #tiem_distancia{
     width: 70%;
@@ -354,65 +274,11 @@
 #tiem_velocidad{
     width: 70%;
 }
-#calcular_tiempo{
-    width: 80%;
-    height: 40px;
-    outline-style: none;
-    border: 0;
-    background-color: rgb(0, 148, 20);
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-}
 
 
 
-/* table desing */
-table{
-    background-color: #fff;
-    border: 1px solid #000;
-    margin-top: 20px;
-    width: 100%;
-    border-collapse: collapse;
-    
-}
-thead{
-    padding: 10px;
-    background-color: rgb(0, 0, 0);
-    border-bottom: 5px solid rgb(0, 148, 20);
-}
-thead th{
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
-    color: #fff;
-    font-family: sans-serif;
 
-}
-td{
-    padding: 10px;
-    font-family: sans-serif;
-}
-tbody tr th{
-    font-family: sans-serif;
-    font-size: 13px;
-    text-align: left;
-    padding-left: 3px;
-    box-sizing: border-box;
-    padding-right: 20px;
-}
-tbody tr{
-    text-align: center;
-}
-
-tr:nth-child(even) {
-    background-color: rgb(211, 211, 211); 
-}
-
-
-
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 500px){
     .table{
         display: none;
     }
